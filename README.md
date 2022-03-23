@@ -8,6 +8,11 @@ Falls Sie gerade die README-Datei aus diesem Repository lesen, wechseln Sie bitt
 
 
 
+### ASCII-Tabelle ###
+
+Das folgende Beispiel erstellt eine kleine "ASCII-Tabelle", bestehend den druckbaren (Unicode-)Zeichen mit den Codes 0...255
+
+<iframe src="ASCII-Tabelle.html" style="width:600px; height:400px; overflow:hidden"></iframe>
 
 
 
