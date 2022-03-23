@@ -6,6 +6,9 @@ Zwar wurden die Beispiele primär für den Kurs "Grundlagen der Informatik" an d
 
 > Nota bene: dieser Beitrag befindet sich gerade in Arbeit und wird vermutlich nicht vor Ende des lfd. Semesters fertiggestellt werden
 
+### Zusätzliche Hinweise ###
+
+Eine Beschreibung der von der "Online-IDE" bereitgestellten System-Klassen und -Schnittstellen finden Sie unter [https://www.online-ide.de/api_documentation.html](https://www.online-ide.de/api_documentation.html)
 
 
 ### ASCII-Tabelle ###
