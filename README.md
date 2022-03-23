@@ -13,7 +13,7 @@ Eine Beschreibung der von der "Online-IDE" bereitgestellten System-Klassen und -
 
 ### ASCII-Tabelle ###
 
-Das folgende Beispiel erstellt eine kleine "ASCII-Tabelle", bestehend den druckbaren (Unicode-)Zeichen mit den Codes 0...255
+Das folgende Beispiel erstellt eine kleine "ASCII-Tabelle", bestehend aus den druckbaren (Unicode-)Zeichen mit den Codes 0...255
 
 <iframe src="ASCII-Tabelle.html" style="width:800px; height:400px; overflow:hidden"></iframe>
 
