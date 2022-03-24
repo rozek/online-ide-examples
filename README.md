@@ -18,6 +18,10 @@ Das folgende Beispiel erstellt eine kleine "ASCII-Tabelle", bestehend aus den dr
 
 ### Newton-Verfahren ###
 
+Das [Newton-Verfahren](https://de.wikipedia.org/wiki/Newtonverfahren) ermöglicht die (näherungsweise) Bestimmung von Nullstellen nicht-linearer Gleichungen (die mathematischen Voraussetzungen für die Anwendbarkeit des Newton-Verfahrens sollen hier nicht erläutert werden)
+
+![](https://upload.wikimedia.org/wikipedia/commons/c/c9/Newtonsches_N%C3%A4herungsverfahren.png)
+
 <iframe src="Newton-Verfahren.html" style="width:800px; height:400px; overflow:hidden"></iframe>
 
 
