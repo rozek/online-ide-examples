@@ -60,6 +60,7 @@ Das folgende Beispiel zeigt eine mögliche Implementierung:
 
 ### Sukzessive Approximation ###
 
+Die sukzessive Approximation (lateinisch für: schrittweise Annäherung) ist ein Iterationsverfahren zur Annäherung an einen gesuchten (Funktions-)Wert, welches unter bestimmten Voraussetzungen sehr schnell zu einem sehr genauen Ergebnis führt.
 
 #### Berechnung der Quadratwurzel ####
 
