@@ -36,7 +36,7 @@ Die Approximationsanweisung lautet somit:
 
 Das folgende Java-Beispiel berechnet die genäherte Lösung für die Gleichung
 
-x<sup>2</sup>-4 = 0
+&nbsp; x<sup>2</sup>-4 = 0
 
 <iframe src="Newton-Verfahren.html" style="width:800px; height:400px; overflow:hidden"></iframe>
 
@@ -46,9 +46,20 @@ Das Monte-Carlo-Verfahren ermöglicht die Lösung bestimmter mathematischer und 
 
 <img src="MonteCarlo-Illustration.png">
 
-* Quadratfläche: <img src="Monte-Carlo-I.png">
-* Kreisfläche: <img src="Monte-Carlo-II.png">
-* Flächenverhältnis: <img src="Monte-Carlo-III.png">
+<table><tbody>
+  <tr>
+    <td>Quadratfläche:</td>
+    <td><img src="Monte-Carlo-I.png"></td>
+  </tr>
+  <tr>
+    <td>Kreisfläche:</td>
+    <td><img src="Monte-Carlo-II.png"></td>
+  </tr>
+  <tr>
+    <td>Flächenverhältnis:</td>
+    <td><img src="Monte-Carlo-III.png"></td>
+  </tr>
+</tbody></table>
 
 Bei gleichmäßiger Verteilung der Testpunkte ("Nadelstiche") entspricht das Verhältnis der Punkte in zwei Flächen dem Verhältnis der Flächeninhalte.
 
