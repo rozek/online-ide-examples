@@ -98,11 +98,11 @@ sowie
 
 ```n+1 != n```
 
-Wird `n` allmählich größer, so wird irgendwann einmal der Punkt erreicht, an dem diese Ungleichheit nicht mehr gilt, weil das Inkrement (relativ zu `n`) zu klein ist m noch aufgelöst werden zu können - dieses `n` ist dann die größte noch exakt darstellbare Zahl.
+Wird `n` allmählich größer, so wird irgendwann einmal der Punkt erreicht, an dem diese Ungleichheit nicht mehr gilt, weil das Inkrement (relativ zu `n`) zu klein ist um noch aufgelöst werden zu können - dieses `n` ist dann die größte noch exakt darstellbare Zahl.
 
 Doch wie findet man diese Zahl? Ein simples Durchprobieren aller möglichen Kandidaten würde selbst auf heutigen Rechnern viel zu lange dauern.
 
-Einen Ausweg bietet die sukzessive Approximation - allerdings in zwei Stufen: zunächst muß man nämlich erst einmal herausfinden, wie groß der Raum ist, den es zu halbieren gilt. Dazu beginnt man mit einer bekanntermaßen darstellbaren ganzen Zahl (z.B. 1) und addiert 
+Einen Ausweg bietet die sukzessive Approximation - allerdings in zwei Stufen: zunächst muß man nämlich erst einmal herausfinden, wie groß der Raum ist, den es zu halbieren gilt. Dazu beginnt man mit einer bekanntermaßen darstellbaren ganzen Zahl (z.B. 1) und multipliziert diese so oft mit 2, bis das Ergebnis nicht mehr exakt darstellbar ist - diese Zahl ist der zu halbierende Raum. 
 
 <iframe src="MAX_SAFE_INTEGER.html" style="width:800px; height:400px; overflow:hidden"></iframe>
 
