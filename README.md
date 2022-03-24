@@ -10,12 +10,33 @@ Zwar wurden die Beispiele primär für den Kurs "Grundlagen der Informatik" an d
 
 Eine Beschreibung der von der "Online-IDE" bereitgestellten System-Klassen und -Schnittstellen finden Sie unter [https://www.online-ide.de/api_documentation.html](https://www.online-ide.de/api_documentation.html)
 
-
 ### ASCII-Tabelle ###
 
 Das folgende Beispiel erstellt eine kleine "ASCII-Tabelle", bestehend aus den druckbaren (Unicode-)Zeichen mit den Codes 0...255
 
 <iframe src="ASCII-Tabelle.html" style="width:800px; height:400px; overflow:hidden"></iframe>
+
+### Newton-Verfahren ###
+
+<iframe src="Newton-Verfahren.html" style="width:800px; height:400px; overflow:hidden"></iframe>
+
+
+### Monte-Carlo-Verfahren ###
+
+<iframe src="Monte-Carlo-Verfahren.html" style="width:800px; height:400px; overflow:hidden"></iframe>
+
+
+### Sukzessive Approximation ###
+
+
+### Berechnung der Quadratwurzel ###
+
+<iframe src="Quadratwurzel.html" style="width:800px; height:400px; overflow:hidden"></iframe>
+
+
+### Berechnung von MAX_SAFE_INTEGER ###
+
+<iframe src="MAX_SAFE_INTEGER.html" style="width:800px; height:400px; overflow:hidden"></iframe>
 
 
 
