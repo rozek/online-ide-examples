@@ -74,11 +74,17 @@ Die Vorgehensweise entspricht dem bekannten Witz "wie fängt ein Mathematiker ei
 
 Für die Berechnung der Quadratwurzel sind die oben genannten Bedingungen erfüllt, sofern man sich auf positive oder negative Werte beschränkt.
 
+Das folgende Java-Beispiel zeigt, wie man die Quadratwurzel approximiert:
+
 <iframe src="Quadratwurzel.html" style="width:800px; height:400px; overflow:hidden"></iframe>
 
-
-
 #### Berechnung von MAX_SAFE_INTEGER ####
+
+Die sukzessive Approximation eignet sich aber auch sehr gut für das Auffinden fester Werte, wie im folgenden Beispiel gezeigt wird.
+
+Der Hintergrund: das weit verbreitete Format für Fließkommazahlen IEEE 754 kann auch ganze Zahlen in einem weiten Bereich exakt repräsentieren. In der doppeltgenauen Variante ist dieser Wertebereich derart groß, daß einige moderne Skriptsprachen (allen voran JavaScript) bereits darauf verzichten, unterschiedliche Zahlenformate anzubieten und stattdessen allein auf 64 Bit breite Fließkommazahlen setzen.
+
+Doch wie lässt sich herausfinden, welche Ganzzahlen tatsächlich exakt dargestellt werden können?
 
 <iframe src="MAX_SAFE_INTEGER.html" style="width:800px; height:400px; overflow:hidden"></iframe>
 
