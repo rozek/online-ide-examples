@@ -102,7 +102,7 @@ Wird `n` allmählich größer, so wird irgendwann einmal der Punkt erreicht, an 
 
 Doch wie findet man diese Zahl? Ein simples Durchprobieren aller möglichen Kandidaten würde selbst auf heutigen Rechnern viel zu lange dauern.
 
-Einen Ausweg bietet die sukzessive Approximation - allerdings in zwei Stufen: zunächst muß man nämlich erst einmal herausfinden, wie groß der Raum ist, den es zu halbieren gilt. Dazu beginnt man mit einer bekanntermaßen darstellbaren ganzen Zweierpotenz (z.B. 1) und multipliziert diese so oft mit 2, bis das Ergebnis nicht mehr exakt darstellbar ist - diese Zahl ist der zu halbierende Raum.
+Einen Ausweg bietet die sukzessive Approximation - allerdings in zwei Stufen: zunächst muß man nämlich erst einmal herausfinden, wie groß der Raum ist, den es zu halbieren gilt. Dazu beginnt man mit einer bekanntermaßen darstellbaren ganzzahligen Zweierpotenz (z.B. 1) und multipliziert diese so oft mit 2, bis das Ergebnis nicht mehr exakt darstellbar ist - diese Zahl ist der zu halbierende Raum.
 
 Anschließend nutzt man das zuvor bereits beschriebene Verfahren, um den Wert für `MAX_SAFE_INTEGER` zu ermitteln.
 
