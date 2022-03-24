@@ -49,15 +49,15 @@ Das Monte-Carlo-Verfahren ermöglicht die Lösung bestimmter mathematischer und 
 <table><tbody>
   <tr>
     <td>Quadratfläche:</td>
-    <td><img src="Monte-Carlo-I.png"></td>
+    <td><img src="Monte-Carlo-I.png" style="height:22px"></td>
   </tr>
   <tr>
     <td>Kreisfläche:</td>
-    <td><img src="Monte-Carlo-II.png"></td>
+    <td><img src="Monte-Carlo-II.png" style="height:20px"></td>
   </tr>
   <tr>
     <td>Flächenverhältnis:</td>
-    <td><img src="Monte-Carlo-III.png"></td>
+    <td><img src="Monte-Carlo-III.png" style="height:19px"></td>
   </tr>
 </tbody></table>
 
