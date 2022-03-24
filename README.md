@@ -20,7 +20,7 @@ Das folgende Beispiel erstellt eine kleine "ASCII-Tabelle", bestehend aus den dr
 
 Das [Newton-Verfahren](https://de.wikipedia.org/wiki/Newtonverfahren) ermöglicht die (näherungsweise) Bestimmung von Nullstellen nicht-linearer Gleichungen (die mathematischen Voraussetzungen für die Anwendbarkeit des Newton-Verfahrens sollen hier nicht erläutert werden)
 
-<img src="Newton-Verfahren.png">
+<img src="Newton-Verfahren.png" style="height:175px">
 
 Aus dem Diagramm lässt sich leicht ablesen:
 
