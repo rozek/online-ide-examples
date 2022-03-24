@@ -62,7 +62,15 @@ Das folgende Beispiel zeigt eine mögliche Implementierung:
 
 Die sukzessive Approximation (lateinisch für: schrittweise Annäherung) ist ein Iterationsverfahren zur Annäherung an einen gesuchten (Funktions-)Wert, welches unter bestimmten Voraussetzungen sehr schnell zu einem sehr genauen Ergebnis führt.
 
+Wird das Verfahren zur Berechnung eines Funktionswertes verwendet, sollten folgende Voraussetzungen erfüllt sein:
+
+* die Funktion selbst sollte schwierig,
+* die Umkehrfunktion jedoch einfach zu berechnen sein,
+* außerdem muss die Funktion streng monoton verlaufen.
+
 #### Berechnung der Quadratwurzel ####
+
+Für die Berechnung der Quadratwurzel sind diese Bedingungen erfüllt, sofern man sich auf positive oder negative Werte beschränkt.
 
 <iframe src="Quadratwurzel.html" style="width:800px; height:400px; overflow:hidden"></iframe>
 
