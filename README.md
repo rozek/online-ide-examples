@@ -99,15 +99,15 @@ Doch wie lässt sich herausfinden, welche Ganzzahlen tatsächlich exakt dargeste
 
 Zunächst einmal werde vorausgesetzt, daß es überhaupt ganze Zahlen `n` gibt, die exakt darstellbar sind:
 
-```Math.round(n) == n```
+&nbsp; ```Math.round(n) == n``` (in JavaScript-Notation geschrieben)
 
 Für hinreichend kleine Ganzzahlen gilt dann
 
-```Math.round(n+1) == n+1```
+&nbsp; ```Math.round(n+1) == n+1```
 
 sowie
 
-```n+1 != n```
+&nbsp; ```n+1 != n```
 
 Wird `n` allmählich größer, so wird irgendwann einmal der Punkt erreicht, an dem diese Ungleichheit nicht mehr gilt, weil das Inkrement (relativ zu `n`) zu klein ist um noch aufgelöst werden zu können - dieses `n` ist dann die größte noch exakt darstellbare Zahl. In JavaScript gibt es eine Konstante namens `MAX_SAFE_INTEGER`, welche diesen Wert enthält.
 
@@ -120,7 +120,6 @@ Anschließend nutzt man das zuvor bereits beschriebene Verfahren, um den Wert f�
 Das folgende Java-Programm zeigt, wie es geht:
 
 <iframe src="MAX_SAFE_INTEGER.html" style="width:800px; height:400px; overflow:hidden"></iframe>
-
 
 ## Lizenz ##
 
