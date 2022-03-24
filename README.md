@@ -40,8 +40,15 @@ x<sup>2</sup>-4 = 0
 
 <iframe src="Newton-Verfahren.html" style="width:800px; height:400px; overflow:hidden"></iframe>
 
-
 ### Monte-Carlo-Verfahren ###
+
+Das Monte-Carlo-Verfahren ermöglicht die Lösung bestimmter mathematischer und physikalischer Probleme mittels stochastischer Methoden - zum Beispiel die Bestimmung der Kreiszahl π.
+
+![](https://www.rozek.de/GDI/GDI-02/MonteCarlo-Illustration.png)
+
+* Quadratfläche: ![](https://www.rozek.de/GDI/GDI-02/Monte-Carlo-I.png)
+* Kreisfläche: ![](https://www.rozek.de/GDI/GDI-02/Monte-Carlo-II.png)
+* Flächenverhältnis: ![](https://www.rozek.de/GDI/GDI-02/Monte-Carlo-III.png)
 
 <iframe src="Monte-Carlo-Verfahren.html" style="width:800px; height:400px; overflow:hidden"></iframe>
 
