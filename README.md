@@ -24,15 +24,15 @@ Das [Newton-Verfahren](https://de.wikipedia.org/wiki/Newtonverfahren) ermöglich
 
 Aus dem Diagramm lässt sich leicht ablesen:
 
-<img src="https://www.rozek.de/GDI/GDI-02/Newton-I.png" style="zoom:50%">
+<img src="Newton-I.png">
 
 oder
 
-![](https://www.rozek.de/GDI/GDI-02/Newton-II.png)
+<img src="Newton-II.png">
 
 Die Approximationsanweisung lautet somit:
 
-![](https://www.rozek.de/GDI/GDI-02/Newton-III.png)
+<img src="Newton-III.png">
 
 Das folgende Java-Beispiel berechnet die genäherte Lösung für die Gleichung
 
@@ -44,11 +44,11 @@ x<sup>2</sup>-4 = 0
 
 Das Monte-Carlo-Verfahren ermöglicht die Lösung bestimmter mathematischer und physikalischer Probleme mittels stochastischer Methoden - zum Beispiel die Bestimmung der Kreiszahl π.
 
-![](https://www.rozek.de/GDI/GDI-02/MonteCarlo-Illustration.png)
+<img src="MonteCarlo-Illustration.png">
 
-* Quadratfläche: ![](https://www.rozek.de/GDI/GDI-02/Monte-Carlo-I.png)
-* Kreisfläche: ![](https://www.rozek.de/GDI/GDI-02/Monte-Carlo-II.png)
-* Flächenverhältnis: ![](https://www.rozek.de/GDI/GDI-02/Monte-Carlo-III.png)
+* Quadratfläche: <img src="Monte-Carlo-I.png">
+* Kreisfläche: <img src="Monte-Carlo-II.png">
+* Flächenverhältnis: <img src="Monte-Carlo-III.png">
 
 Bei gleichmäßiger Verteilung der Testpunkte ("Nadelstiche") entspricht das Verhältnis der Punkte in zwei Flächen dem Verhältnis der Flächeninhalte.
 
