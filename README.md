@@ -20,11 +20,11 @@ Das folgende Beispiel erstellt eine kleine "ASCII-Tabelle", bestehend aus den dr
 
 Das [Newton-Verfahren](https://de.wikipedia.org/wiki/Newtonverfahren) ermöglicht die (näherungsweise) Bestimmung von Nullstellen nicht-linearer Gleichungen (die mathematischen Voraussetzungen für die Anwendbarkeit des Newton-Verfahrens sollen hier nicht erläutert werden)
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Newtonsches_N%C3%A4herungsverfahren.png" style="height:50px"><br>(Quelle: Sebastian Queißer auf Wikipedia, Lizenz: [Creative Commons Attribution-Share Alike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/deed.en))
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Newtonsches_N%C3%A4herungsverfahren.png"><br>(Quelle: Sebastian Queißer auf Wikipedia, Lizenz: [Creative Commons Attribution-Share Alike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/deed.en))
 
 Aus dem Diagramm lässt sich leicht ablesen:
 
-![](https://www.rozek.de/GDI/GDI-02/Newton-I.png)
+<img src="https://www.rozek.de/GDI/GDI-02/Newton-I.png" style="zoom:50%">
 
 oder
 
