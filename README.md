@@ -34,6 +34,7 @@ Die Approximationsanweisung lautet somit:
 
 ![](https://www.rozek.de/GDI/GDI-02/Newton-III.png)
 
+Das folgende Java-Beispiel berechnet die genäherte Lösung für die Gleichung x<sup>2</sup>-4 = 0
 
 <iframe src="Newton-Verfahren.html" style="width:800px; height:400px; overflow:hidden"></iframe>
 
