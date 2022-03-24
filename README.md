@@ -24,15 +24,15 @@ Das [Newton-Verfahren](https://de.wikipedia.org/wiki/Newtonverfahren) ermöglich
 
 Aus dem Diagramm lässt sich leicht ablesen:
 
-<img src="Newton-I.png">
+&nbsp; <img src="Newton-I.png" style="height:40px">
 
 oder
 
-<img src="Newton-II.png">
+&nbsp; <img src="Newton-II.png" style="height:40px">
 
 Die Approximationsanweisung lautet somit:
 
-<img src="Newton-III.png">
+&nbsp; <img src="Newton-III.png" style="height:40px">
 
 Das folgende Java-Beispiel berechnet die genäherte Lösung für die Gleichung
 
