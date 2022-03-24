@@ -86,6 +86,24 @@ Der Hintergrund: das weit verbreitete Format für Fließkommazahlen IEEE 754 kan
 
 Doch wie lässt sich herausfinden, welche Ganzzahlen tatsächlich exakt dargestellt werden können?
 
+Zunächst einmal werde vorausgesetzt, daß es überhaupt ganze Zahlen `n` gibt, die exakt darstellbar sind:
+
+```Math.round(n) == n```
+
+Für hinreichend kleine Ganzzahlen gilt dann
+
+```Math.round(n+1) == n+1```
+
+sowie
+
+```n+1 != n```
+
+Wird `n` allmählich größer, so wird irgendwann einmal der Punkt erreicht, an dem diese Ungleichheit nicht mehr gilt, weil das Inkrement (relativ zu `n`) zu klein ist m noch aufgelöst werden zu können - dieses `n` ist dann die größte noch exakt darstellbare Zahl.
+
+Doch wie findet man diese Zahl? Ein simples Durchprobieren aller möglichen Kandidaten würde selbst auf heutigen Rechnern viel zu lange dauern.
+
+Einen Ausweg bietet die sukzessive Approximation - allerdings in zwei Stufen: zunächst muß man nämlich erst einmal herausfinden, wie groß der Raum ist, den es zu halbieren gilt. Dazu beginnt man mit einer
+
 <iframe src="MAX_SAFE_INTEGER.html" style="width:800px; height:400px; overflow:hidden"></iframe>
 
 
