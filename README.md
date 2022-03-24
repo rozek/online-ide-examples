@@ -26,6 +26,13 @@ Aus dem Diagramm lässt sich leicht ablesen:
 
 ![](https://www.rozek.de/GDI/GDI-02/Newton-I.png)
 
+oder
+
+![](https://www.rozek.de/GDI/GDI-02/Newton-II.png)
+
+Die Approximationsanweisung lautet somit:
+
+![](https://www.rozek.de/GDI/GDI-02/Newton-III.png)
 
 
 <iframe src="Newton-Verfahren.html" style="width:800px; height:400px; overflow:hidden"></iframe>
