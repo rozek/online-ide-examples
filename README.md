@@ -50,8 +50,13 @@ Das Monte-Carlo-Verfahren ermöglicht die Lösung bestimmter mathematischer und 
 * Kreisfläche: ![](https://www.rozek.de/GDI/GDI-02/Monte-Carlo-II.png)
 * Flächenverhältnis: ![](https://www.rozek.de/GDI/GDI-02/Monte-Carlo-III.png)
 
-<iframe src="Monte-Carlo-Verfahren.html" style="width:800px; height:400px; overflow:hidden"></iframe>
+Bei gleichmäßiger Verteilung der Testpunkte ("Nadelstiche") entspricht das Verhältnis der Punkte in zwei Flächen dem Verhältnis der Flächeninhalte.
 
+Man muss also nur zählen, wieviele Nadelstiche im Quadrat und wieviele im Kreis liegen.
+
+Das folgende Beispiel zeigt eine mögliche Implementierung:
+
+<iframe src="Monte-Carlo-Verfahren.html" style="width:800px; height:400px; overflow:hidden"></iframe>
 
 ### Sukzessive Approximation ###
 
@@ -59,6 +64,7 @@ Das Monte-Carlo-Verfahren ermöglicht die Lösung bestimmter mathematischer und 
 #### Berechnung der Quadratwurzel ####
 
 <iframe src="Quadratwurzel.html" style="width:800px; height:400px; overflow:hidden"></iframe>
+
 
 
 #### Berechnung von MAX_SAFE_INTEGER ####
