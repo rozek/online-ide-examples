@@ -99,7 +99,7 @@ Doch wie lässt sich herausfinden, welche Ganzzahlen tatsächlich exakt dargeste
 
 Zunächst einmal werde vorausgesetzt, daß es überhaupt ganze Zahlen `n` gibt, die exakt darstellbar sind:
 
-&nbsp; ```Math.round(n) == n``` (in JavaScript-Notation geschrieben)
+&nbsp; ```Math.round(n) == n``` (in Java-Notation geschrieben)
 
 Für hinreichend kleine Ganzzahlen gilt dann
 
