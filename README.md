@@ -22,6 +22,12 @@ Das [Newton-Verfahren](https://de.wikipedia.org/wiki/Newtonverfahren) ermöglich
 
 ![](https://upload.wikimedia.org/wikipedia/commons/c/c9/Newtonsches_N%C3%A4herungsverfahren.png)<br>(Quelle: Sebastian Queißer auf Wikipedia, Lizenz: [Creative Commons Attribution-Share Alike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/deed.en))
 
+Aus dem Diagramm lässt sich leicht ablesen:
+
+![](https://www.rozek.de/GDI/GDI-02/Newton-I.png)
+
+
+
 <iframe src="Newton-Verfahren.html" style="width:800px; height:400px; overflow:hidden"></iframe>
 
 
