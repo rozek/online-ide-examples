@@ -68,9 +68,11 @@ Wird das Verfahren zur Berechnung eines Funktionswertes verwendet, sollten folge
 * die Umkehrfunktion jedoch einfach zu berechnen sein,
 * außerdem muss die Funktion streng monoton verlaufen.
 
+Die Vorgehensweise entspricht dem bekannten Witz "wie fängt ein Mathematiker eine Fliege in einem Raum?". Die Antwort: "er halbiert den Raum und prüft, in welcher Hälfte sich die Fliege befindet. Anschließend wiederholt er das Verfahren für die Hälfte mit der Fliege - so oft, bis der Raum so klein ist, daß sich die Fliege nicht mehr bewegen kann. Damit ist die Fliege gefangen."
+
 #### Berechnung der Quadratwurzel ####
 
-Für die Berechnung der Quadratwurzel sind diese Bedingungen erfüllt, sofern man sich auf positive oder negative Werte beschränkt.
+Für die Berechnung der Quadratwurzel sind die oben genannten Bedingungen erfüllt, sofern man sich auf positive oder negative Werte beschränkt.
 
 <iframe src="Quadratwurzel.html" style="width:800px; height:400px; overflow:hidden"></iframe>
 
