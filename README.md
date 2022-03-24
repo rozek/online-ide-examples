@@ -16,12 +16,12 @@ Das folgende Beispiel erstellt eine kleine "ASCII-Tabelle", bestehend aus den dr
 
 <iframe src="ASCII-Tabelle.html" style="width:800px; height:400px; overflow:hidden"></iframe>
 
-#### Newton-Verfahren ####
+### Newton-Verfahren ###
 
 <iframe src="Newton-Verfahren.html" style="width:800px; height:400px; overflow:hidden"></iframe>
 
 
-#### Monte-Carlo-Verfahren ####
+### Monte-Carlo-Verfahren ###
 
 <iframe src="Monte-Carlo-Verfahren.html" style="width:800px; height:400px; overflow:hidden"></iframe>
 
@@ -29,12 +29,12 @@ Das folgende Beispiel erstellt eine kleine "ASCII-Tabelle", bestehend aus den dr
 ### Sukzessive Approximation ###
 
 
-### Berechnung der Quadratwurzel ###
+#### Berechnung der Quadratwurzel ####
 
 <iframe src="Quadratwurzel.html" style="width:800px; height:400px; overflow:hidden"></iframe>
 
 
-### Berechnung von MAX_SAFE_INTEGER ###
+#### Berechnung von MAX_SAFE_INTEGER ####
 
 <iframe src="MAX_SAFE_INTEGER.html" style="width:800px; height:400px; overflow:hidden"></iframe>
 
