@@ -40,6 +40,16 @@ Das folgende Java-Beispiel berechnet die genäherte Lösung für die Gleichung
 
 <iframe src="Newton-Verfahren.html" style="width:800px; height:400px; overflow:hidden"></iframe>
 
+**Mögliche Übungen**
+
+Das Newton-Verfahren gilt als nur "lokal konvergent", findet Nullstellen im allgemeinen Fall also nur, sofern der Startwert x<sub>0</sub> "hinreichend nahe" an der tatsächlichen Nullstelle liegt (und sich die Funktion "vernünftig verhält") und kann sehr wohl sogar divergieren (selbst für scheinbar einfache Polynome). Die [Mathepedia](https://mathepedia.de/Konvergenzbetrachtungen_Newton-Verfahren.html) enthält hierzu einen schönen Artikel.
+
+* beobachten Sie das Verhalten des Newton-Verfahrens für bekanntermaßen konvergierende und divergierende Funktonen und Startpunkte, indem Sie die angenäherten Nullstellen und die tatsächlichen Funktionswerte an diesen Stellen mittels `println` dokumentieren
+* verbessern Sie das Verfahren dahingehend, daß die Iteration stoppt
+    * sobald der Funktionswert an einer angenäherten Nullstelle ausreichend klein ist (z.B. < 0.0001),
+    * eine max. Anzahl an Iterationen überschritten wird.
+* merken Sie sich die jeweils beste gefundene Nullstelle und geben Sie diese aus, falls das Newton-Verfahren nicht vernünftig konvergiert
+
 ### Monte-Carlo-Verfahren ###
 
 Das Monte-Carlo-Verfahren ermöglicht die Lösung bestimmter mathematischer und physikalischer Probleme mittels stochastischer Methoden - zum Beispiel die Bestimmung der Kreiszahl π.
@@ -69,6 +79,13 @@ Das folgende Beispiel zeigt eine mögliche Implementierung:
 
 <iframe src="Monte-Carlo-Verfahren.html" style="width:800px; height:400px; overflow:hidden"></iframe>
 
+**Mögliche Übungen**
+
+Eine schöne Eigenschaft des Monte-Carlo-Verfahrens ist seine einfache Unterbrechbarkeit (und die Möglichkeit es fortzusetzen) sofern der verwendete (Pseuo-)Zufallsgenerator nicht immer wieder dieselben Werte liefert.
+
+* geben Sie neben dem Näherungswert für 𝜋 auch die Anzahl der "Nadelstiche" in Quadrat und Kreis aus und verwenden Sie diese (durch Eintragen in das Programm) als Startwert für einen weiteren Durchlauf
+* protokollieren Sie die Anzahl der Iterationen (d.h. die Gesamtzahl der "Nadelstiche" im Quadrat) mit der Genauigkeit des Ergebnisses - was stellen Sie fest?
+
 ### Sukzessive Approximation ###
 
 Die sukzessive Approximation (lateinisch für: schrittweise Annäherung) ist ein Iterationsverfahren zur Annäherung an einen gesuchten (Funktions-)Wert, welches unter bestimmten Voraussetzungen sehr schnell zu einem sehr genauen Ergebnis führt.
@@ -88,6 +105,13 @@ Für die Berechnung der Quadratwurzel sind die oben genannten Bedingungen erfül
 Das folgende Java-Beispiel zeigt, wie man die Quadratwurzel approximiert:
 
 <iframe src="Quadratwurzel.html" style="width:800px; height:400px; overflow:hidden"></iframe>
+
+**Mögliche Übungen**
+
+Das Schöne an der sukzessiven Approximation ist seine Geschwindigkeit (bei gleichzeitig moderatem Implementierungsaufwand)
+
+* protokollieren Sie die Anzahl de benötigten Iterationen abhängig von de vorgegebenen Zielgenauigkeit
+* protokollieren Sie die Genauigkeit des Ergebnisses abhängig von der Zahl der Iterationen
 
 #### Berechnung von MAX_SAFE_INTEGER ####
 
