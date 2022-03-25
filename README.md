@@ -38,7 +38,7 @@ Das folgende Java-Beispiel berechnet die genäherte Lösung für die Gleichung
 
 &nbsp; x<sup>2</sup>-4 = 0
 
-<iframe src="Newton-Verfahren.html" style="width:800px; height:400px; overflow:hidden"></iframe>
+<iframe src="Newton-Verfahren.html" style="width:800px; height:400px; overflow:hidden"></iframe><br> &nbsp;
 
 **Mögliche Übungen**
 
@@ -77,7 +77,7 @@ Man muss also nur zählen, wieviele Nadelstiche im Quadrat und wieviele im Kreis
 
 Das folgende Beispiel zeigt eine mögliche Implementierung:
 
-<iframe src="Monte-Carlo-Verfahren.html" style="width:800px; height:400px; overflow:hidden"></iframe>
+<iframe src="Monte-Carlo-Verfahren.html" style="width:800px; height:400px; overflow:hidden"></iframe><br> &nbsp;
 
 **Mögliche Übungen**
 
@@ -104,7 +104,7 @@ Für die Berechnung der Quadratwurzel sind die oben genannten Bedingungen erfül
 
 Das folgende Java-Beispiel zeigt, wie man die Quadratwurzel approximiert:
 
-<iframe src="Quadratwurzel.html" style="width:800px; height:400px; overflow:hidden"></iframe>
+<iframe src="Quadratwurzel.html" style="width:800px; height:400px; overflow:hidden"></iframe><br> &nbsp;
 
 **Mögliche Übungen**
 
