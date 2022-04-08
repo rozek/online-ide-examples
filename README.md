@@ -145,6 +145,24 @@ Das folgende Java-Programm zeigt, wie es geht:
 
 <iframe src="MAX_SAFE_INTEGER.html" style="width:800px; height:400px; overflow:hidden"></iframe>
 
+### Nachricht an Außerirdische ###
+
+Wer eine Nachricht an Außerirdische schicken möchte, muss sich als erstes Gedanken darüber machen, in welcher Form dies geschehen könnte.
+
+Aufgrund der Unempfindlichkeit gegenüber thermischem Rauschen und vielen anderen physikalishen Effekten bietet sich eine digital moduliertes Funk- oder Lichtsignal an.
+
+Aber wie soll der Empfänger die Bedeutung der Signale herausfinden, wo Bits und Bitfolgen doch alle möglichen unterschiedlichen Bedeutungen haben können?
+
+Versetzen Sie sich also in die Rolle eines Außerirdischen und ermitteln Sie die Bedeutung der folgenden Byte-Sequenz, die Ihnen aus den Tiefen des Weltalls zugeschickt wurde:
+
+&nbsp; `0, 149, 145, 245, 148, 149, 0`
+
+Viel Spaß beim Knobeln!
+
+P.S.: die Lösung finden Sie als Java-Programm in der Datei `Alien-Message.html`. Mit dem Programm in `Alien-Message-Encoder.html` können Sie Ihre eigenen Nachrichten zusammenbasteln.
+
+P.P.S.: die gezeigte Kodierung hat durchaus praktische Bedeutung und wurde in dieser Form auch umgesetzt (Stichwort "Arecibo")
+
 ## Lizenz ##
 
 Dieser Beitrag steht unter [MIT Lizenz](LICENSE.md)
