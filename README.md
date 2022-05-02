@@ -171,11 +171,15 @@ Bestandteil der Vorlesung ist die Untersuchung der im Einzelhandel weit verbreit
 
 Neben der in der Kodierung enthaltenen Redundanz (es werden pro Ziffer nur 3\*10 von 128 möglichen Bitmustern genutzt) sorgt eine zusätzliche Prüfziffer für mehr Sicherheit gegen das Einlesen falscher Ziffernfolgen.
 
-Das folgende Beispiel berechnet die Prüfziffer für einen 12...13-stelligen EAN-13-Code und gibt sie aus - bei einer 13-atelligen Eingabe wird die ermittelte Prüfziffer zudem mit der eingegebenen verglichen:
+Das folgende Beispiel berechnet die Prüfziffer für einen 12...13-stelligen EAN-13-Code und gibt sie aus - bei einer 13-stelligen Eingabe wird die ermittelte Prüfziffer zudem mit der eingegebenen verglichen:
 
 <iframe src="EAN-13-Checksum.html" style="width:800px; height:400px; overflow:hidden"></iframe>
 
 ### Erzeugen eines zufälligen Barcodes ###
+
+Das folgende Beispiel erzeugt einen zufälligen EAN-13-Barcode inklusive passender Prüfziffer - z.B. zur Verwendung bei der Prüfungsvorbereitung.
+
+<iframe src="random-EAN-13-Code.html" style="width:800px; height:400px; overflow:hidden"></iframe>
 
 ### Kodieren eines Barcodes (in das zugehörige Bitmuster) ###
 
