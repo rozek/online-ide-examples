@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" style="width:100%; height:100%">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+  <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+
+  <style type="text/css">
+    html {
+      text-size-adjust: 100%;
+      -moz-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+      -o-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+
+    body {
+      margin:0px; padding:0px;
+      overflow:hidden;
+    }
+
+    div.java-online {
+      display:flex; position:absolute;
+      left:0px; top:0px; width:100%; height:100%;
+      margin:0px; padding:0px; border:none;
+    }
+  </style>
+
+  <script>
+    window.javaOnlineDir    = '/Online-IDE/htdocs/'
+    window.monacoEditorPath = 'lib/monaco-editor/dev/vs'
+  </script>
+
+  <link rel="preload" href="/Online-IDE/htdocs/lib/monaco-editor/dev/vs/editor/editor.main.js" as="script">
+  <link rel="preload" href="/Online-IDE/htdocs/lib/monaco-editor/dev/vs/editor/editor.main.nls.de.js" as="script">
+
+  <script src="/Online-IDE/htdocs/lib/pixijs/pixi.js"></script>
+
+  <link rel='stylesheet' type='text/css' media='screen' href='/Online-IDE/htdocs/js.webpack/javaOnlineEmbedded.css'>
+  <script src="/Online-IDE/htdocs/lib/jquery/jquery-3.3.1.js"></script>
+  <script src="/Online-IDE/htdocs/lib/markdownit/markdownit.min.js"></script>
+  <script src="/Online-IDE/htdocs/lib/monaco-editor/dev/vs/loader.js"></script>
+  <script src="/Online-IDE/src/client/runtimelibrary/graphics/SpriteLibrary.js"></script>
+  <script src="/Online-IDE/htdocs/lib/howler/howler.core.min.js"></script>
+  <script src="/Online-IDE/htdocs/lib/p5.js/p5.js"></script>
+
+  <script type="module" src="/Online-IDE/htdocs/js.webpack/javaOnline-embedded.js"></script>
+ </head>
+ <body>
+
+  <div class="java-online"
+    data-java-online="{
+      'id':'random-EAN-13-Code',
+      'withBottomPanel':true,
+      'withFileList':true,
+      'withPCode':true,
+      'withConsole':true,
+      'withErrorList':true,
+      'speed':'max'
+    }"
+  >
+    <script type="text/plain" title="EAN-13-Decoder.java">
+class Example {
+  public static boolean isBit (char Candidate) {
+    return (Candidate == '0') || (Candidate == '1');
+  }
+
+  public static char ParityOf (String Bits) {
+    boolean ParityIsEqual = true;
+      for (int i = 0; i < Bits.length(); i++) {
+        if (Bits.charAt(i) == '1') { ParityIsEqual = ! ParityIsEqual; }
+      }
+    return (ParityIsEqual ? '0' : '1');
+  }
+
+  public static String reversed (String Bits) {
+    String Result = "";
+      for (int i = Bits.length()-1; i >= 0; i--) {
+        Result += Bits.charAt(i);
+      }
+    return Result;
+  }
+
+  public static int ValueOf (char Digit) {
+    return (int) Digit - 48;
+  }
+
+  static String[] ParitiesForDigit = new String[] {
+    "111111", "110100", "110010", "110001", "101100",
+    "100110", "100011", "101010", "101001", "100101"
+  };
+
+  public static char DigitForParities (String Parities) {
+    for (int i = 0; i < 10; i++) {
+      if (ParitiesForDigit[i].equals(Parities)) {
+        return (char) (i+48);
+      }
+    }
+
+    println("ungültige Paritätsfolge",Color.red);
+    System.exit(1);
+    return ' ';                             // nur damit der Compiler Ruhe gibt!
+  }
+
+  static String[][][] BitsForDigit = new String[][][] {
+    new String[][] {                                             // linke Hälfte
+      new String[] {                                    // mit gerader Quersumme
+        "0100111", "0110011", "0011011", "0100001", "0011101",
+        "0111001", "0000101", "0010001", "0001001", "0010111"
+      },
+      new String[] {                                  // mit ungerader Quersumme
+        "0001101", "0011001", "0010011", "0111101", "0100011",
+        "0110001", "0101111", "0111011", "0110111", "0001011"
+      }
+    },
+    new String[][] {                                            // rechte Hälfte
+      new String[] {                                    // mit gerader Quersumme
+        "1110010", "1100110", "1101100", "1000010", "1011100",
+        "1001110", "1010000", "1000100", "1001000", "1110100"
+      }
+    }
+  };
+
+  public static char DigitForBits (String Bits, int Side, int Parity) {
+    for (int i = 0; i < 10; i++) {
+      if (BitsForDigit[Side][Parity][i].equals(Bits)) {
+        return (char) (i+48);
+      }
+    }
+
+    println("ungültige Bitfolge",Color.red);
+    System.exit(1);
+    return ' ';                             // nur damit der Compiler Ruhe gibt!
+  }
+
+  public static void main (String[] args) {
+    String Bits = Input.readString("Bitte geben Sie 95 Bits ein");
+
+  /**** Eingabe überprüfen (String.matches fehlt leider) ****/
+
+    if (Bits.length() != 95) {
+      println("ungültige Eingabelänge",Color.red);
+      System.exit(1);
+    }
+
+    for (int i = 0; i < 95; i++) {
+      if (! isBit(Bits.charAt(i))) {
+        println("ungültige Eingabe",Color.red);
+        System.exit(1);
+      }
+    }
+
+    if (! Bits.startsWith("101")) {
+      println("fehlender Anfangsmarker",Color.red);
+      System.exit(1);
+    }
+
+    if (! Bits.substring(3+6*7,3+6*7+5).equals("01010")) {
+      println("fehlender Mittenmarker",Color.red);
+      System.exit(1);
+    }
+
+    if (! Bits.endsWith("101")) {
+      println("fehlender Endemarker",Color.red);
+      System.exit(1);
+    }
+
+    if (ParityOf(Bits.substring(3,3+7)) == '0') {
+      Bits = reversed(Bits);
+    }
+
+  /**** Bitfolge dekodieren (kann immer noch fehlschlagen!) ****/
+
+    String Parities = (
+      ParityOf(Bits.substring(3+0*7,3+1*7)) + ParityOf(Bits.substring(3+1*7,3+2*7)) +
+      ParityOf(Bits.substring(3+2*7,3+3*7)) + ParityOf(Bits.substring(3+3*7,3+4*7)) +
+      ParityOf(Bits.substring(3+4*7,3+5*7)) + ParityOf(Bits.substring(3+5*7,3+6*7))
+    );
+
+    String Digits = DigitForParities(Parities) + (
+      DigitForBits(Bits.substring(3+0*7,3+1*7),0,ValueOf(Parities.charAt(0))) +
+      DigitForBits(Bits.substring(3+1*7,3+2*7),0,ValueOf(Parities.charAt(1))) +
+      DigitForBits(Bits.substring(3+2*7,3+3*7),0,ValueOf(Parities.charAt(2))) +
+      DigitForBits(Bits.substring(3+3*7,3+4*7),0,ValueOf(Parities.charAt(3))) +
+      DigitForBits(Bits.substring(3+4*7,3+5*7),0,ValueOf(Parities.charAt(4))) +
+      DigitForBits(Bits.substring(3+5*7,3+6*7),0,ValueOf(Parities.charAt(5))) +
+      DigitForBits(Bits.substring(8+6*7, 8+7*7), 1,0) +
+      DigitForBits(Bits.substring(8+7*7, 8+8*7), 1,0) +
+      DigitForBits(Bits.substring(8+8*7, 8+9*7), 1,0) +
+      DigitForBits(Bits.substring(8+9*7, 8+10*7),1,0) +
+      DigitForBits(Bits.substring(8+10*7,8+11*7),1,0) +
+      DigitForBits(Bits.substring(8+11*7,8+12*7),1,0)
+    );
+
+  /**** Prüfziffer ermitteln und vergleichen ****/
+
+    int Checksum = 10-(
+      ValueOf(Digits.charAt(0))  + 3*ValueOf(Digits.charAt(1)) +
+      ValueOf(Digits.charAt(2))  + 3*ValueOf(Digits.charAt(3)) +
+      ValueOf(Digits.charAt(4))  + 3*ValueOf(Digits.charAt(5)) +
+      ValueOf(Digits.charAt(6))  + 3*ValueOf(Digits.charAt(7)) +
+      ValueOf(Digits.charAt(8))  + 3*ValueOf(Digits.charAt(9)) +
+      ValueOf(Digits.charAt(10)) + 3*ValueOf(Digits.charAt(11))
+    ) % 10;
+    if (Checksum == 10) { Checksum = 0; }
+
+    if (Digits.charAt(12) != (char) (Checksum+48)) {
+      println("falsche Prüfziffer",Color.red);
+      System.exit(1);
+    };
+
+  /**** fertig! ****/
+
+    println("das eingegebene Bitmuster steht für den Code " + Digits);
+  }
+}
+    </script>
+
+  </div>
+ </body>
+</html>
