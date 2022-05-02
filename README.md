@@ -163,6 +163,24 @@ P.S.: die Lösung finden Sie als Java-Programm in der Datei `Alien-Message.html`
 
 P.P.S.: die gezeigte Kodierung hat durchaus praktische Bedeutung und wurde in dieser Form auch umgesetzt (Stichwort "Arecibo")
 
+## EAN-13 Barcode ##
+
+Bestandteil der Vorlesung ist die Untersuchung der im Einzelhandel weit verbreiteten EAN-13 Strichcodes. Die folgenden Java-Beispiele illustrieren verschiedene Details dieses Codes und können zudem als Hilfe bei der Prüfungsvorbereitung dienen.
+
+### Bestimmung der Prüfziffer ###
+
+Neben der in der Kodierung enthaltenen Redundanz (es werden pro Ziffer nur 3\*10 von 128 möglichen Bitmustern genutzt) sorgt eine zusätzliche Prüfziffer für mehr Sicherheit gegen das Einlesen falscher Ziffernfolgen.
+
+Das folgende Beispiel berechnet die Prüfziffer für einen 12...13-stelligen EAN-13-Code und gibt sie aus - bei einer 13-atelligen Eingabe wird die ermittelte Prüfziffer zudem mit der eingegebenen verglichen:
+
+<iframe src="EAN-13-Checksum.html" style="width:800px; height:400px; overflow:hidden"></iframe>
+
+### Erzeugen eines zufälligen Barcodes ###
+
+### Kodieren eines Barcodes (in das zugehörige Bitmuster) ###
+
+### Dekodieren eines Barcodes (aus dem zugehörigen Bitmuster) ###
+
 ## Lizenz ##
 
 Dieser Beitrag steht unter [MIT Lizenz](LICENSE.md)
