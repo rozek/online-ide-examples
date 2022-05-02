@@ -177,11 +177,15 @@ Das folgende Beispiel berechnet die Prüfziffer für einen 12...13-stelligen EAN
 
 ### Erzeugen eines zufälligen Barcodes ###
 
-Das folgende Beispiel erzeugt einen zufälligen EAN-13-Barcode inklusive passender Prüfziffer - z.B. zur Verwendung bei der Prüfungsvorbereitung.
+Das nachstehende Beispiel erzeugt einen zufälligen EAN-13-Barcode inklusive passender Prüfziffer - z.B. zur Verwendung bei der Prüfungsvorbereitung.
 
 <iframe src="random-EAN-13-Code.html" style="width:800px; height:400px; overflow:hidden"></iframe>
 
 ### Kodieren eines Barcodes (in das zugehörige Bitmuster) ###
+
+Das folgende Java-Beispiel generiert das Bitmuster für einen eingegebenen 12...13-stelligen EAN-13-Code. Ist die Eingabe 12-stellig, so wird zunächst eine passende Prüfziffer berechnet und an die Eingabe angehängt. Bei 13-stelligen Eingaben erfolgt bewusst *keine Kontrolle der Prüfziffer* - auf diese Weise können zu Übungszwecken auch fehlerhafte Codes generiert werden.
+
+<iframe src="EAN-13-Encoder.html" style="width:800px; height:400px; overflow:hidden"></iframe>
 
 ### Dekodieren eines Barcodes (aus dem zugehörigen Bitmuster) ###
 
