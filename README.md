@@ -189,6 +189,10 @@ Das folgende Java-Beispiel generiert das Bitmuster für einen eingegebenen 12...
 
 ### Dekodieren eines Barcodes (aus dem zugehörigen Bitmuster) ###
 
+Das letzte Beispiel aus dieser Gruppe dekodiert eine eingegebene Bitfolge in den zugehörigen EAN-13-Code - oder gibt eine Fehlermeldung aus. Das Bitmuster darf auch seitenverkehrt (also in "verkehrter Richtung" gelesen worden) sein.
+
+<iframe src="EAN-13-Decoder.html" style="width:800px; height:400px; overflow:hidden"></iframe>
+
 ## Lizenz ##
 
 Dieser Beitrag steht unter [MIT Lizenz](LICENSE.md)
